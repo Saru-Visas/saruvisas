@@ -4,6 +4,11 @@
     --black: #000000;
     --white: #fff;
     --grey: rgb(90, 90, 90);
+
+    --saru-red: #ff504a;
+    --saru-red2: #4d201f;
+    --saru-blue: #0B314D;
+    --saru-blue2: #3675a2;
 }
 
 *
@@ -37,8 +42,7 @@ body
 {
     width: 100%;
     min-width: 320px;
-    /* background-color: rgba(80, 80, 80, 0.688); */
-    background-color: #000000;
+    background-color: #fff;
     color: var(--grey);
     font-family: 'Helvetica', sans-serif;
 }
@@ -85,13 +89,13 @@ h5
     padding: 0 20px;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
+    background-color: #fff;
+    /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0)); */
     justify-content: space-between;
     transition: all .1s ease-in-out;
 }
 .nav-container.on
 {
-    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     
@@ -105,7 +109,7 @@ h5
 }
 .nav-full img
 {
-    height: 50px;
+    height: 40px;
     margin: 10px 0;
     border-radius: 50px;
     align-self: center;
@@ -113,30 +117,22 @@ h5
 }
 .nav-full a
 {
+    display: flex;
     width: auto;
     height: auto;
 }
 .nickname
 {
     display: block;
-    width: 130px;
-    height: 20px;
-    background-image: url('../assets/casmac_logo.png');
+    width: 100px;
+    height: 30px;
+
+    background-image: url('../assets/saru_text_logo320px.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px 0 10px 20px;
-    /* align-self: center; */
-    opacity: 0;
-    transition: all .1s ease-in-out;
-    transform: translateY(18px);
-}
-.nickname.on
-{
-    opacity: 1;
-    transition: all .1s ease-in-out;
-    transform: translateX(0px);
-
+    align-self: center;
 }
 
 
@@ -203,7 +199,7 @@ h5
     display: flex;
     font-size: 16px;
     font-weight: 400;
-    color: var(--white);
+    color: #090331;
     text-decoration: none;
 }
 .nav-links-container
@@ -245,11 +241,11 @@ h5
     transition: all .5s ease-in-out;
     transform: translateX(870px);
     top: 0;
-    left: 0;
+    right: 0;
 }
 .menu-mobile-background.open
 {
-    background-color: var(--black);
+    background-color: var(--white);
     transition: all .5s ease-in-out;
     transform: translateX(0);
 }
@@ -276,7 +272,7 @@ h5
     font-weight: 400;
     line-height: 80px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--saru-blue);
 }
 .menu-mobile-social-media
 {
@@ -292,7 +288,7 @@ h5
 .menu-mobile-social-media img
 {
     width: auto;
-    height: 40px;
+    height: 20px;
 }
 
 
@@ -312,8 +308,8 @@ h5
 .menu-button-burger
 {
     width: 24px;
-    height: 2px;
-    background: var(--white);
+    height: 3px;
+    background: var(--saru-blue);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all .5s ease-in-out;
@@ -324,8 +320,8 @@ h5
     content: ' ';
     position: absolute;
     width: 24px;
-    height: 2px;
-    background: var(--white);
+    height: 3px;
+    background: var(--saru-blue);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all .5s ease-in-out;
@@ -377,6 +373,7 @@ h5
     display: flex;
     width: 100%;
     height: auto;
+    padding-top: 60px;
     /* padding-bottom: 0px; */
     justify-content: center;
 }
@@ -391,6 +388,59 @@ h5
 }
 
 /* start main */
+.header-bar-container
+{
+    display: flex;
+    width: 100%;
+    height: 34px;
+    background-color: var(--saru-blue);
+}
+.cover-saru-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--saru-blue));
+    padding-right: 12%;
+    align-items: flex-end;
+    justify-content: center;
+}
+#background-cover
+{
+    width: 100%;
+    height: 450px;
+    background-image: url('../assets/cover-images/saru_cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slogan-cover,
+.top-cover-content
+{
+    display: flex;
+}
+.cover-saru-container span
+{
+    font-size: 30px;
+    font-weight: 100;
+    color: var(--white);
+}
+#saru-cover-logo
+{
+    width: 100px;
+    height: 30px;
+    margin: 0 14px;
+    background-image: url('../assets/saru_text_logo_white.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+}
+
+
+
+
 
 
 
@@ -416,7 +466,7 @@ h5
     width: 100%;
     align-self: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: var(--saru-red2);
     transition: .3s;
 
 }
@@ -444,7 +494,7 @@ h5
 }
 .footer-background h3
 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 100;
     margin-top: 20px;
     text-align: center;
@@ -491,7 +541,7 @@ h5
 .footer-social-media a
 {
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     color: white;
@@ -527,11 +577,21 @@ h5
     }
     .nav-full img
     {
-        height: 20px;
+        height: 30px;
     }
     .nav-links-container
     {
         display: none;
+    }
+
+    .cover-saru-container span
+    {
+        font-size: 20px;
+    }
+    .slogan-cover
+    {
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 
@@ -561,12 +621,27 @@ h5
 
 @media only screen and (min-width: 860px)
 {
-    .menu-button
+    /* .menu-button
     {
         display: none;
-    }
+    } */
+    /* .menu-mobile-background
+    {
+        display: none;
+    } */
     .menu-mobile-background
     {
-        display: none;
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 100vh;
+        background: var(--white);
+        backdrop-filter: blur(10px);
+        background-size: cover;
+        background-position: bottom;
+        transition: all .5s ease-in-out;
+        transform: translateX(0px);
+        top: 0;
     }
 }
