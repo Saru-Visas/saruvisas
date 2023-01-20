@@ -484,11 +484,13 @@ h5
 .principal-section-container
 {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
+    max-width: 1200px;
     height: auto;
     padding: 20px;
-    align-items: center;
+    /* align-items: center; */
+    gap: 20px;
 }
 .principal-article-container
 {
@@ -497,8 +499,9 @@ h5
     width: 100%;
     height: auto;
     max-width: 1000px;
+    justify-content: space-between;
 }
-.principal-article-container:nth-child(1)
+/* .principal-article-container:nth-child(1)
 {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--saru-blue);
@@ -506,10 +509,11 @@ h5
 .principal-article-container:nth-child(2)
 {
     margin-top: 20px;
-}
+} */
 .principal-article-content
 {
     display: flex;
+    flex-direction: column;
 }
 #principal-article-passport-image,
 #principal-article-visa-image
@@ -542,14 +546,15 @@ h5
     justify-content: space-between;
 
 }
-.principal-article-info a
+#principal-btn
 {
     display: flex;
     width: 50%;
     height: 40px;
+    font-size: 16px;
     color: var(--white);
     text-decoration: none;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 2px;
     background-color: var(--saru-blue);
     justify-content: center;
@@ -714,6 +719,16 @@ h5
     {
         flex-direction: column;
         align-items: center;
+    }
+    .principal-section-container
+    {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .principal-article-container:nth-child(1)
+    {
+        /* padding-bottom: 20px; */
+        border-bottom: 1px solid var(--saru-blue);
     }
     .principal-article-content
     {
