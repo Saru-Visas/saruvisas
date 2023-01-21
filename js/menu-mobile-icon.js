@@ -18,18 +18,26 @@ menuButton.addEventListener('click', () =>
     }
 });
 
-const menuProjects = document.querySelector('.mobile-projects');
+// const menuProjects = document.querySelector('.mobile-projects');
 
-menuProjects.addEventListener('click', () => 
+// menuProjects.addEventListener('click', () => 
+// {
+//         menuButton.classList.remove('open');
+//         menuContent.classList.remove('open');
+//         menuOpen = false;
+// });
+
+const menuHome = document.querySelector('.mobile-home');
+const menuInicio = document.querySelector('.mobile-inicio');
+
+menuHome.addEventListener('click', () => 
 {
         menuButton.classList.remove('open');
         menuContent.classList.remove('open');
         menuOpen = false;
 });
 
-const menuHome = document.querySelector('.mobile-home');
-
-menuHome.addEventListener('click', () => 
+menuInicio.addEventListener('click', () => 
 {
         menuButton.classList.remove('open');
         menuContent.classList.remove('open');

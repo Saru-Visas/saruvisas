@@ -421,10 +421,10 @@ h5
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 80VH;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--saru-blue));
-    padding-right: 12%;
-    align-items: flex-end;
+    /* padding-right: 12%; */
+    align-items: center;
     justify-content: center;
 }
 #background-cover
@@ -432,24 +432,35 @@ h5
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 400px;
-    margin-top: 34px;
+    height: 80VH;
+    /* margin-top: 34px; */
     background-image: url('../assets/cover-images/saru_cover.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.slogan-cover h2
+{
+    /* display: flex; */
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
 .slogan-cover,
 .top-cover-content
 {
     display: flex;
+    flex-direction: column;
 }
 .cover-saru-container span
 {
     font-family: 'Roboto', sans-serif;
     font-size: 44px;
-    font-weight: 100;
+    font-weight: 600;
     color: var(--white);
+    text-align: center;
 }
 #saru-cover-logo
 {
@@ -708,8 +719,8 @@ h5
     {
         padding-right: 0;
         align-items: center;
-        justify-content: flex-end;
-        padding-bottom: 40px;
+        justify-content: center;
+        /* padding-top: 40px; */
     }
     .cover-saru-container span
     {
