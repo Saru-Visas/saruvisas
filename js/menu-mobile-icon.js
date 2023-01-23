@@ -27,9 +27,9 @@ menuButton.addEventListener('click', () =>
 //         menuOpen = false;
 // });
 
-const menuHome = document.querySelector('.mobile-inicio');
+const menuInicio = document.querySelector('.mobile-inicio');
 
-menuHome.addEventListener('click', () => 
+menuInicio.addEventListener('click', () => 
 {
         menuButton.classList.remove('open');
         menuContent.classList.remove('open');
