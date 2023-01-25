@@ -742,8 +742,8 @@ h5
     height: auto;
     margin-top: 20px;
     padding: 10px;
-    color: var(--white);
-    background-color: #4d201f;
+    color: #5a5a5a;
+    background-color: #ffffff;
     border-radius: 4px;
 }
 #principal-btn
