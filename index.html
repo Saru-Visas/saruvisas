@@ -10,7 +10,7 @@
     <meta name="description" content="Te ayudamos con el trámite de tu Visa de Turista de una manera rápida, fácil y segura.">
     <meta name="keywords" content="SARU Visas">
     <link rel="shortcut icon" href="./assets/saru_favicon32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home-main.css">
     <link rel="apple-touch-icon" href="./assets/saru_icon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,22 @@
 
                 <div class="right-nav">
                     <div>
+
+                        <!-- <div class="nav-links-container lang-nav-es">
+                            <ul class="nav-links">
+                                <li><a href="#">INICIO</a></li>
+                                <li><a>VISA</a></li>
+                                <li><a>PASAPORTE</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-links-container lang-nav-en">
+                            <ul class="nav-links">
+                                <li><a href="#">HOME</a></li>
+                                <li><a>VISA</a></li>
+                                <li><a>PASSPORT</a></li>
+                            </ul>
+                        </div> -->
 
                         <div class="menu-button">
                             <div class="menu-button-burger"></div>
@@ -49,14 +65,24 @@
                     <div class="menu-mobile-links mobile-lang-nav-es">
                         <ul class="links-mobile">
                             <li><a class="mobile-inicio" href="#mobile-home">INICIO</a></li>
-                            <li><a href="https://www.facebook.com/saruvisasypasaporte/">FACEBOOK</a></li>
-                            <li><a href="https://www.instagram.com/_saruvisas/">INSTAGRAM</a></li>
-                            <li><a href="https://www.tiktok.com/@saruvisas">TIKTOK</a></li>
+                            <li><a href="./visa">VISA</a></li>
+                            <li><a>PASAPORTE</a></li>
                          </ul>
                          <div class="menu-mobile-social-media">
                             <a href="#"><img src="./assets/saru_text_logo_white.png" alt="SARU Visas Logo"></a> 
                          </div>
                     </div>
+
+                    <!-- <div class="menu-mobile-links mobile-lang-nav-en">
+                        <ul class="links-mobile">
+                            <li><a class="mobile-inicio" href="#">HOME</a></li>
+                            <li><a>VISA</a></li>
+                            <li><a>PASSPORT</a></li>
+                         </ul>
+                         <div class="menu-mobile-social-media">
+                            <a href="#"><img src="./assets/saru_text_logo_white.png" alt="SARU Visas Logo"></a>
+                         </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -69,17 +95,62 @@
 
             <section class="spanish">
 
-                <div id="background-cover"></div>
+                <!-- fix background video line 436 CSS -->
+                <div class="header-bar-container">
+                    Documentación necesaria para tramite de visa. <a href="./visa">SABER MÁS</a>
+                </div>
+                <div id="background-cover">
+                    <video id="background-video" autoplay loop muted playsinline poster="./assets/cover-images/home351bbe66fb7bab79503dac4ca34946ff.jpg">
+                        <source src="./assets/cover-images/homecfdc428e1f407f206012f5a640e4a12c.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="cover-saru-container">
                     <div class="slogan-cover">
-                        <span>SITIO WEB <br> EN CONSTRUCCIÓN</span> <br>
-                        <h2>ENCUÉNTRANOS EN</h2>
+                        <!-- <div class="top-cover-content">
+                            <span>EN</span>
+                            <i id="saru-cover-logo"></i>
+                        </div> -->
+                        <span>ENCANTADOS DE AYUDARTE</span>
                     </div>
                     <div class="cover-buttons">
-                        <a href="https://www.facebook.com/saruvisasypasaporte/">FACEBOOK</a>
-                        <a href="https://www.instagram.com/_saruvisas/">INSTAGRAM</a>
+                        <!-- <a href="./visa">TRAMITE VISA</a> -->
+                        <!-- <a href="#">PASAPORTE</a> -->
                     </div>
                 </div>
+
+                <section class="principal-section-container">
+
+                    <article class="principal-article-container">
+                            <div>
+                                <h2>VISA AMERICANA</h2>
+                                <a href="./visa">
+                                    <div class="principal-article-content">
+                                        <div id="principal-article-visa-image"></div>
+                                        <!-- <div class="principal-article-info">
+                                            <p>Te ayudamos con el trámite de tu Visa de Turista de una manera rápida, fácil y segura.</p>
+                                        </div> -->
+                                        <span id="principal-btn" href="#">Más información</span>
+                                    </div>
+                                </a>
+                            </div>
+                    </article>
+
+                    <article class="principal-article-container">
+                            <div>
+                                <h2>PASAPORTE MEXICANO</h2>
+                                <a>
+                                    <div class="principal-article-content">
+                                        <div id="principal-article-passport-image"></div>
+                                        <!-- <div class="principal-article-info">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cumque corporis ad dolor in eius doloribus.</p>
+                                        </div> -->
+                                        <span id="principal-btn">Próximamente más información</span>
+                                    </div>
+                                </a>
+                            </div>
+                    </article>
+
+                </section>
 
             </section>
 
