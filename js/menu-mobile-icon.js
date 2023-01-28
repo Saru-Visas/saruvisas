@@ -35,3 +35,4 @@ menuInicio.addEventListener('click', () =>
         menuContent.classList.remove('open');
         menuOpen = false;
 });
+
