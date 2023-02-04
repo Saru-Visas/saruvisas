@@ -58,6 +58,7 @@ h1
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 700;
+    color: var(--saru-blue);
 }
 h2
 {
@@ -71,11 +72,15 @@ h3
 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
 }
 h4
 {
-    font-size: 8px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--grey);
+    margin-bottom: 14px;
 }
 h5
 {
@@ -502,7 +507,12 @@ h5
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: var(--saru-blue);
+    background-color: #dedede;
+    margin-top: -16px;
+}
+#documentacion
+{
+    border-radius: 4px;
 }
 .menu-option-title
 {
@@ -521,7 +531,7 @@ h5
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: #000000;
+    background-color: transparent;
     justify-content: space-around;
 }
 .menu-option-content
@@ -535,6 +545,7 @@ h5
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 .menu-option-content span
 {
@@ -550,7 +561,7 @@ h5
 .option3,
 .option5
 {
-    background-color: #dedede;
+    background-color: transparent;
 }
 .option2,
 .option4
@@ -566,7 +577,10 @@ h5
 {
     background-image: url(../assets/next_white.png);
 }
-
+#doc-menu-option-content:hover
+{
+    border-radius: 4px;
+}
 .principal-section-container
 {
     display: flex;
@@ -577,6 +591,23 @@ h5
     padding: 20px;
     /* align-items: center; */
     gap: 20px;
+    text-align: center;
+}
+.primera-vez-content.none
+{
+    display: none;
+}
+.renovacion-content.none
+{
+    display: none;
+}
+.solo-cita-content.none
+{
+    display: none;
+}
+.section-plans-container
+{
+    margin-top: -28px;
 }
 .section-plans-top
 {
@@ -608,6 +639,7 @@ h5
     background-color: #3e3e3e;
     border-radius: 4px;
     justify-content: space-between;
+    text-align: left;
 }
 .small-price
 {
@@ -674,11 +706,12 @@ h5
     flex-direction: column;
     width: 100%;
     height: auto;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     padding: 20px;
     justify-content: space-between;
     background-color: #ececec;
     border-radius: 4px;
+    text-align: left;
 }
 .principal-article-container h2
 {
