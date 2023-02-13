@@ -644,7 +644,8 @@ h5
 .small-price
 {
     padding: 10px 20px;
-    width: 100%;
+    width: fit-content;
+    text-decoration: none;
 }
 /* .small-price:first-child
 {
