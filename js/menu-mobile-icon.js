@@ -18,14 +18,14 @@ menuButton.addEventListener('click', () =>
     }
 });
 
-// const menuProjects = document.querySelector('.mobile-projects');
+const menuContacto = document.querySelector('.mobile-contacto');
 
-// menuProjects.addEventListener('click', () => 
-// {
-//         menuButton.classList.remove('open');
-//         menuContent.classList.remove('open');
-//         menuOpen = false;
-// });
+menuContacto.addEventListener('click', () => 
+{
+        menuButton.classList.remove('open');
+        menuContent.classList.remove('open');
+        menuOpen = false;
+});
 
 const menuInicio = document.querySelector('.mobile-inicio');
 
