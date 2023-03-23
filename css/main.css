@@ -659,9 +659,16 @@ h5
     width: 100%;
     height: auto;
 }
+.map-container
+{
+    width: 100%;
+    display: flex;
+    background-color: #0B314D;
+    justify-content: center;
+}
 #contact-saru-map
 {
-    width: 100vw;
+    width: 97vw;
     height: 300px;
     border: none;
     margin-bottom: 14px;
